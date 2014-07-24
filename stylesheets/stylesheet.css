@@ -1,5 +1,5 @@
 body {
-	font-family: Fira, sans;
+	font-family: "Fira Sans", "sans-serif";
 	background: #EEE;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 #header_titles {
-	font-family: bebasregular, sans;
+	font-family: bebasregular, sans-serif;
 	color: #138A82;
 	padding-top: 0.5em;
 	font-size: 5em;
@@ -72,7 +72,7 @@ main {
 }
 
 .article_header {
-	font-family: bebasregular; Sans;
+	font-family: bebasregular; sans-serif;
 	text-align: left;
 }
 
@@ -85,7 +85,7 @@ main {
 
 .article_header p {
 	margin-left: 3em;
-	font-family: Fira, Sans;
+	font-family: "Fira Sans", "sans-serif";
 	font-size: 1em;
 	line-height: 0.5em;
 	font-style: italic;
