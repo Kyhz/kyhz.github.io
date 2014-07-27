@@ -1,6 +1,6 @@
 body {
 	font-family: "Fira Sans", "sans-serif";
-	background: #EEE;
+	background: #FFF;
 }
 
 .container {
@@ -15,8 +15,8 @@ body {
 	background: #1FEDDF;
 	text-align: center;
 	border: 2px;
-	padding: 0;
-	margin: 0;
+	padding: 1em 0 0 0;
+	margin-top: -3em;
 }
 
 #header_titles {
@@ -48,7 +48,7 @@ body {
 
 .nav_bar a:link, .nav_bar a:visited {
     display: block;
-    width: 120px;
+    width: 9em;
     font-weight: bold;
     color: #FFFFFF;
     background-color: #13BFB4;
@@ -63,7 +63,7 @@ body {
 }
 
 main {
-	margin: 0 auto 100px;
+	margin: 0 auto;
 }
 
 .main_wrapper {
@@ -99,6 +99,13 @@ main {
 	border-left: none;
 	border-top: none;
 	border-right: none;
+	margin-bottom: 2em;
+}
+
+.main_wrapper h3 {
+	color: #13BFB4;
+	margin: 1em auto;
+	font-size: 1.5em;
 }
 
 main h2 a {
@@ -107,20 +114,31 @@ main h2 a {
 }
 
 main p {
+	font-size: 1.1em;
 	margin: auto;
-	width: 95%;
-	line-height: 1.5em;
+	width: 75%;
+	line-height: 2.5em;
 }
 
 main img {
-	padding: 15px;
+	padding: 1em;
 	display: block;
 	margin: auto;
 }
 
+.code {
+	font-family: Courier;
+	border: 0.11em solid grey;
+	margin: auto;
+	width: 50%;
+	background: LightGrey;
+	margin-bottom: 1em;
+}
+
 #footer_main {
-	display: inline;
+	clear: both;
 	font-size: 0.7em;
+	margin-top: 10em;
 }
 
 .home_list {
@@ -142,4 +160,16 @@ main img {
 	text-decoration: none;
 	font-size: 1.5em;
 	line-height: 2em;
+}
+
+.index_main {
+	display: inline-block;
+	width: 60%;
+}
+
+.index_side {
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	width: 24%;
 }
