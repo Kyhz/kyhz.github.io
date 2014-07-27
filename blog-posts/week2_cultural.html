@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	    <h2>Inline vs Inline Block</h2>
+	    <p>There are different ways to position content in HTML to make your page look good. Two of these are the CSS properties display:inline and display: inline-block. We are going to examine the differences between these two styles.</p>
+	    
+	    <h3>Inline</h3>
+	    <img id="inline" src="http://i.minus.com/ibgI1CEJ2afjdJ.jpg" />
+	    <div class="code">
+	        .inline{<br>&emsp;display: inline;<br>&emsp;background: grey;<br>}<br>
+&lt;p class="inline"&gt; Lorem ipsum dolor...&lt;/p&gt;<br>
+&lt;p class="inline"&gt; Lorem ipsum dolor...&lt;/p&gt;
+	    </div>
+	    <p>Inline is the default property for some elements such as &lt;span&gt; and &lt;strong&gt;. Inline positioning displays content sequentially without any spaces or line breaks. As the name "inline" implies, it basically keeps things on the same horizantal line.</p>
+	    <p>The image above is actually two HTML paragraphs. Normally there would be a break between the two and they would be stacked vertically, but here because we use display: inline, the second paragraph begins immediately following the end of the first and therefore they appear as one.</p>
+	    
+	    <h3>Inline-Block</h3>
+	    <img id="inline-block" src="http://i.minus.com/ivN1Wb7LizvcC.jpg" />
+	    <div class="code">
+	        .inline-block{<br>&emsp;width: 300px;<br>&emsp;display: inline-block;<br>&emsp;background: grey;<br>}<br>
+&lt;p class="inline-block"&gt; Lorem ipsum dolor...&lt;/p&gt;<br>
+&lt;p class="inline-block"&gt; Lorem ipsum dolor...&lt;/p&gt;
+	    </div>
+	    <p>Inline-block is a method of displaying HTML in block on the same horizantal line. Normally display: block displays HTML elements stacked vertically. Display: inline-block stacks them horizantally. It can be used as an alternative to float.</p>
+	    <p>The above image displays the same two paragraphs using display: inline-block. As the name inline-block suggests, the elements are displayed as blocks on the same horizontal line. If they were displayed as regular blocks they would display as vertically stacked.</p>
+	</body>
+</html>
