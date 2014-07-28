@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="../fonts/fira.css">
+    <title>Responsive Design and Fluid Layouts</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <h1>Responsive Design and Fluid Layouts</h1>
+        <h2>By: Nodira and Raphael</h2>
+        <hr>
+      </div>
+    </header>
+    <aside>
+      <img id="main_visual" src="../../blog-posts/images/wlenface.jpg">
+      <nav>
+        <ul id="nav_list">
+          <li><a href="#Fluid">Fluid Layouts</a></li>
+          <li><a href="#Responsive">Responsive Design</a></li>
+          <li><a href="#Ref">Reflections</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div class="main_wrapper">
+        <section>
+          <h1 id="Fluid">Fluid Layouts</h1>
+          <p>Fluid layouts are basically websites that scale along with the screen size. Typically, most websites use a fixed layout <sup>1</sup>, which means that the width of the page is a set number of pixels, typically 960 these days. Fluid layouts on the other hand use units that scale with the size of the page, either percentages of the screen (the usual fluid, also known as liquid design) or in <em>ems</em>, which is a unit that is relative to the user's font size (this is referred to as elastic design)<sup>2</sup>. In both of these cases, the webpage will look the same no matter how you resize you browser or what device you use to visit the site.</p>
+          <hr>
+        </section>
+        <section>
+          <h1 id="Responsive">Responsive Design</h1>
+          <p>Fluid layouts are part of a more general design process called responsive design. The layout will grow or shrink in response to the user's screen size. But there are other tricks one can use to alter the layout of a webpage based on the user's environment: media queries<sub>3</sub>. Media queries are bits of CSS code that only activate when certain conditions are met on the user's side, for instance the window size is within a certain range. This allows feats such as moving a sidebar to the top of the page when the screen is too narrow (like on a mobile device) or rearrange a grid of pictures to adapt their size to the available screen real estate and neatly occupy the optimal surface<sup>4</sup>.</p>
+          <hr>
+        </section>
+        <section>
+          <h1 id="Ref">Reflections</h1>
+          <p>Responsive design is definitely a lot more work than a traditional, fixed width fire-and-forget approach, but it has so many advantages in terms of usability on different medium that it's hard not to justify the effort in my opinion. With the spread of smartphones and tablets, I think it's essential that your website stays usable on all devices if you want it to be successful. I had a lot of fun using media queries; they have a magical feel to them. As far as fluid/elastic layouts are concerned, I'm all for them. The idea of using fixed quantities for things like width and height and so on really doesn't sit well with me in the first place. Using non-fixed width does introduce a bit of trickiness, but I think it's absolutely worth it, especially given the increase of types of Web-capable devices we've had over the last few years.</p>
+          <hr>
+        </section>
+        <section><ul>
+        <li><sup>1</sup>http://www.sitepoint.com/responsive-web-design-fluid-layouts/</li>
+        <li><sup>2</sup>http://www.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/</li>
+        <li><sup>3</sup>http://blog.teamtreehouse.com/beginners-guide-to-responsive-web-design</li>
+        <li><sup>4</sup>http://alistapart.com/article/responsive-web-design</li>
+        <li><sup>5</sup>http://d.alistapart.com/responsive-web-design/ex/ex-site-mini.html</li>
+      </ul>
+        </section>
+      </div>
+    </main>
+    
+
+  </body>
+</html>
