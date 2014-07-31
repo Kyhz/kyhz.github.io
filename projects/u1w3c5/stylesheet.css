@@ -1,0 +1,8 @@
+#button_list {
+	list-style: none;
+	margin-left: 420px;
+}
+
+#left_button, #right_button, #flip_button, #win {
+	display: none;
+}
