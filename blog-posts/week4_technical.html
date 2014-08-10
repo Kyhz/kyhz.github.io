@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<title>CrossedUp</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
+	<link rel="stylesheet" href="./fonts/fira.css">
+</head>
+<body>
+	<div class="container">
+		<header id="main_header">
+			<h1 id="header_titles">Crossed<br><span class="header_title_alt">up</span></h1>
+			<nav class="header_nav_bar">
+				<ul class="nav_bar">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../projects.html">Projects</a></li>
+					<li><a href="https://twitter.com/dat_kyhz" target"_blank">Twitter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<header class="article_header">
+				<h1>Talking Ruby</h1>
+				<p>Saturday, August 9th 2014</p>
+			</header>
+			<div class="main_wrapper">
+				<section>
+					<h2 class="article_subtitle">Enumerable#group_by</h2>
+					<p>So let's talk Ruby. Specifically, about a module method of Enumerable called group_by. Let's first go over what the heck a module is. If you're familiar with object-oriented programming, you know what a class is. If you're not, then think of a class as a blueprint for a thing. You define that thing's properties and ways to maniputale and access information about that thing inside a class. Using this blueprint, you can then create new instances of that thing which will have the properties you defined available to them. Ruby has classes and they are great for a lot of things, but they also have this thing called Modules. They're very similar to classes in that they also contain constants and functions, but the difference is that you don't need an actual object to call the functions defined inside a module, unlike classes. For instance Math is a module. If you want to calculate a square root or a cosine, you'll need to call Math.sqrt() or Math.cos(). Enumerable is one of those modules. And it works with arrays and hashes in particular. But wait, didn't I just say modules didn't need objects to be called, and arrays and hashes are, well, objects? Well that's because the Enumerable module was <em>mixed in</em>. But let's just ignore that part since I haven't yet actually managed to talk about the thing I'm supposed to be blogging about.</p>
+					<p>So what does group_by do? Basically it lets you sort your array or hash or whatever into bins. You get to decide how they are sorted by specifying some rule inside a block. But it's probably just easier to explain with an example.</p>
+					<div class="code">&gt;hash = {"Chrono Trigger" => 1995, "Super Mario 64" => 1996, "Diablo" => 1996, "Street Fighter Alpha 2" => 1996, "Megaman X" => 1993, "Tactics Ogre" => 1995}<br>&gt;hash.group_by {|k,v| v}<br>&gt;{1995=>[["Chrono Trigger", 1995], ["Tactics Ogre", 1995]], 1996=>[["Super Mario 64", 1996], ["Diablo", 1996], ["Street Fighter Alpha 2", 1996]], 1993=>[["Megaman X", 1993]]}</div>
+					<p>So we take a hash of games and their release dates, then we call group_by and tell it to sort it by the hash values, i.e by release date, and we get a hash where the keys are the release dates and the values are arrays of the games that came out that year. In more abstract terms, the result of group_by is a hash whose keys are the evaluated result of the block passed to it and the values are arrays of elements in the collection that evaluated to that result. This is a very powerful tool since it allows us to easily sort data using very flexible criteria. For example, suppose we have an array of mixed data, like the one we had in challenge 2 of this week. We can use group_by to isolate a specific type of data.</p>
+					<div class="code">&gt;i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2 ]<br>&gt;no_numbers_allowed = i_want_pets.group_by{|x| x.is_a?(Integer)}[false]<br>&gt;["I", "want", "pets", "but", "only", "have"]</div>
+					<p>is_a?(Integer) checks each element to see if it's a number and returns a boolean. So we have a hash with 2 keys: true and false, the former containing all the integers and the latter containing everything else. We simply select the value of the false bin, which is an array of things not numbers. Pretty cool, depending on how high your standards for coolness are. Personally I think it's great and foresee using it in a lot of situations. Until next time.
+				</section>
+			</div>
+		</main>
+		<footer id="footer_main">
+			<hr>
+			<p>&copy;2014 Raphael Ho
+			</p>
+		</footer>
+	</div>
+</body>

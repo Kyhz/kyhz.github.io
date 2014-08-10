@@ -79,6 +79,7 @@ main {
 
 .article_header h1 {
 	margin-left: 1em;
+	letter-spacing: 0.1em;
 	font-size: 3em;
 	color: #138A82;
 }
@@ -130,9 +131,11 @@ main img {
 	font-family: Courier;
 	border: 0.11em solid grey;
 	margin: auto;
-	width: 50%;
+	width: 60%;
 	background: LightGrey;
 	margin-bottom: 1em;
+	margin-top: 1em;
+	line-height: 2em;
 }
 
 #footer_main {
