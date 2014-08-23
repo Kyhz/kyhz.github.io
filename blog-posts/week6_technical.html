@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<title>CrossedUp</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
+	<link rel="stylesheet" href="./fonts/fira.css">
+</head>
+<body>
+	<div class="container">
+		<header id="main_header">
+			<h1 id="header_titles">Crossed<br><span class="header_title_alt">up</span></h1>
+			<nav class="header_nav_bar">
+				<ul class="nav_bar">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../projects.html">Projects</a></li>
+					<li><a href="https://twitter.com/dat_kyhz" target"_blank">Twitter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<header class="article_header">
+				<h1>Week 6 Technical</h1>
+				<p>Friday, August 22nd 2014</p>
+			</header>
+			<div class="main_wrapper">
+				<section>
+					<h2 class="article_subtitle">Mixins and Multiple Inheritance</h2>
+					<p>I talked a little bit about modules in a previous post, but let's go more in depth this time. Let's review a bit first. Modules are similar to classes in that they are abstract structures. They both can both contain methods and constants. However one of the big differences is that modules cannot be instantiated. Typically, a class method is called through an object that was created beforehand. Module methods do not need an object, and are really what is called a namespace, i.e a frame of reference for what you mean when you call a function. For that reason, it doesn't make sense to store variables in a module. This is one thing to keep in mind if you're trying to decide whether to use a module or a class. So what's the advantage of using a module, then? The answer is something called mixin.</p>
+					<p>Despite their apparent similarities, it doesn't make sense to compare modules vs classes as abstractions of data. What you really want to be doing is using both in tandem. If you know a bit of object oriented programming, you might be familiar with what is called multiple inheritance. Say, for example, that you have a quadrilateral class that you use to represent shapes made from 4 straight edges. The class holds variables for the length of each side and a method to compute its perimeter. Later on, you want to work with rectangles and decide to make a new class. Now, rectangles are really just a specific type of quadrilaterals, so everything that works on them will also work on rectangles. Therefore, you can simply have your rectangle class <em>inherit</em> from the quadrilateral class and avoid having to rewrite everything. Let's skip ahead a bit. In addition to your rectangle class, you've also made a rhombus class that inherits from quadrilaterals. Now you want to work with squares. They're a specific type of rectangles, but also a specific type of rhombi. Languages that support multiple inheritance let you make it so that your square class can inherit from both rectangle and rhombus.</p>
+					<p>So that's pretty cool. Except ruby doesn't support multiple inheritance. But talking about it shows one way of handling the case of when you want one object to have access to the methods of two or more different constructs. Ruby does this with mixins. You can use the keyword include &lt;module name &gt; to make the methods from that module available to your class. It's slightly different from multiple inheritance since you cannot mix a class in with another class, but their usage and the problem they solve is very similar. What's also great with mixins is that you get methods for "free". For example, if you implement a .each method for your class and include the Enumerable module, you'll get access to all the Enumerable methods without having to write them out in your class.</p>
+				</section>
+			</div>
+		</main>
+		<footer id="footer_main">
+			<hr>
+			<p>&copy;2014 Raphael Ho
+			</p>
+		</footer>
+	</div>
+</body>
