@@ -21,12 +21,12 @@
 		</header>
 		<main>
 			<header class="article_header">
-				<h1>Title</h1>
-				<p>date</p>
+				<h1>On the Danger of SQL Injections</h1>
+				<p>Friday, August 29th 2014</p>
 			</header>
 			<div class="main_wrapper">
 				<section>
-					<h2 class="article_subtitle">Subtitle</h2>
+					<h2 class="article_subtitle">Always be Vigilant</h2>
 					<p>SQL Injections. It's a term I'd heard about before but never actually understood until now. Simply put, SQL injection is when a malicious user is able to enter an SQL statement in an input field and have the database execute it. For example, let's suppose you have a product that you're selling online. You require your clients to log in in order to make a purchase. That means you need to somehow store usernames and passwords. Realistically, that means storing them in a database. There are alternatives, but chances are that it'll be SQL based. So now, when one of your users tries to log in, the first thing you do is check if their username is in the database. So you'll write something like this:</p>
 					<div class="code">statement = "SELECT * FROM users WHERE name ='" + userName + "';"</div>
 					<p>Now imagine if some wise guy puts in something that causes the SQL statement to do something unexpected, such as inputting the following as his username:</p>
