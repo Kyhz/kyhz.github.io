@@ -1,0 +1,181 @@
+body {
+	font-family: "Fira Sans", "sans-serif";
+	background: #FFF;
+}
+
+.container {
+	width: 75%;
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+	background: #FFF;
+}
+
+#main_header {
+	background: #1FEDDF;
+	text-align: center;
+	border: 2px;
+	padding: 1em 0 0 0;
+	margin-top: -3em;
+}
+
+#header_titles {
+	font-family: bebasregular, sans-serif;
+	color: #138A82;
+	padding-top: 0.5em;
+	font-size: 5em;
+	line-height: 0.5em;
+}
+
+#header_titles .header_title_alt {
+	font-size: 1em;
+	color: #FFF;
+	padding-left: 3.5em;
+}
+
+.nav_bar {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #13BFB4;
+}
+
+.nav_bar li {
+	display: inline;
+	float: left;
+}
+
+.nav_bar a:link, .nav_bar a:visited {
+    display: block;
+    width: 9em;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #13BFB4;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav_bar a:hover, .nav_bar a:active {
+    background-color: #138A82;
+}
+
+main {
+	margin: 0 auto;
+}
+
+.main_wrapper {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.article_header {
+	font-family: bebasregular, sans-serif;
+	text-align: left;
+}
+
+
+.article_header h1 {
+	margin-left: 1em;
+	letter-spacing: 0.1em;
+	font-size: 3em;
+	color: #138A82;
+}
+
+.article_header p {
+	margin-left: 3em;
+	font-family: "Fira Sans", "sans-serif";
+	font-size: 1em;
+	line-height: 0.5em;
+	font-style: italic;
+	color: #959E9D;
+}
+
+.article_subtitle {
+	color: #13BFB4;
+	border-style: solid;
+	border-bottom-width: 2px;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	margin-bottom: 2em;
+}
+
+.main_wrapper h3 {
+	color: #13BFB4;
+	margin: 1em auto;
+	font-size: 1.5em;
+}
+
+main h2 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+main p {
+	font-size: 1.1em;
+	margin: auto;
+	width: 75%;
+	line-height: 2.5em;
+}
+
+main img {
+	padding: 1em;
+	display: block;
+	margin: auto;
+}
+
+.code {
+	font-family: Courier;
+	border: 0.11em solid grey;
+	margin: auto;
+	width: 60%;
+	background: LightGrey;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	line-height: 2em;
+}
+
+#footer_main {
+	clear: both;
+	font-size: 0.7em;
+	margin-top: 10em;
+}
+
+.home_list {
+	list-style: none;
+}
+
+.home_list li {
+	margin-bottom: 2em;
+}
+
+.date {
+	font-style: italic;
+	color: #959E9D;
+	margin-left: 2em;
+}
+
+.blog_post_link {
+	margin-top: 2em;
+	text-decoration: none;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+.index_main {
+	float: left;
+	width: 65%;
+	margin-bottom: 10em;
+}
+
+.index_side {
+	float: right;
+	width: 18%;
+}
+
+.index_side p {
+	width: 100%;
+}

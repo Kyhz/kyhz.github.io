@@ -1,0 +1,10 @@
+defaults:
+  -
+    scope:
+       path: ""
+       type: "posts"
+    values:
+       layout: "default"
+       author: "Raphael Ho"
+paginate: 5
+paginate_path: "/page:num"
