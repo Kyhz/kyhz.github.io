@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>CrossedUp</title>
 	<meta name="generator" content="Jekyll v2.3.0">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="stylesheet" href="/fonts/fonts.css">
@@ -20,10 +20,80 @@
 	</nav>
 </header>
 
-	<h1 id="test-site">Test Site</h1>
+	
+  <h1><a href="/2014/09/04/week7-cultural.html">On Affirmation</a></h1>
+  <p class="author">
+    <span class="date">2014-09-04 00:00:00 -0500</span>
+  </p>
+  <div class="content">
+    <p>The values that really stand out for me are: Accomplishment, Commitment, Excitement, Growth, Personal development, Self-respect. Staring at this list, one thing that jumps out to me is that they’re all deeply personal. It may speak something about either my personality or my experiences, or both. I cannot tell. In any case, the moments I’ve felt the strongest positive emotions were intrinsically tied to things I accomplished (mostly) on my own. If I had to pick one of the values mentioned earlier, it would probably be Accomplishment. The feeling of having done something worthwhile is a rare and cherished one (at least in my case). Doubly so when it is acknowledged by others. In a similar vein, personal failures are also something that affect me greatly. Success or failure in groups don’t elicit the same elation or despair in me. Those feelings are mitigated when others are involved (“I had help.” and “We all did badly.”) So maybe the value I care about the most is actually Personal Accomplishment.
+It’s difficult to compare the emotions you have in the best moments of your life to those you feel in general, but let’s try to grade them on a 1 to 5 scale based on how much I try to live up to these values in general:</p>
 
-<p>Welcome to the NHK.</p>
+<p>-Accomplishment: 4</p>
 
+<p>I wish I could say I felt accomplished at the end of each day, but sadly I don’t. It is however something that motivates me a big deal, even if it’s sometimes not entirely sufficient to overcome the tremendous inertia of laziness on its own.</p>
+
+<p>-Commitment: 1</p>
+
+<p>I actually hate committing to things. Deciding which color toothbrush I want is something that takes me way more thought and time than I care to admit. On the plus side, it keeps me from spending money on impulse purchases!</p>
+
+<p>-Excitement: 2</p>
+
+<p>I don’t really actively seek out excitement in my daily life. I’m usually pretty happy with having a routine and I rarely get bored on my own.</p>
+
+<p>-Growth: 5</p>
+
+<p>Specifically intellectual growth. I absolutely love learning things, and I always feel compelled to understand how and why things work. It’s a bit of a narrow aspect of growth, but it is actually something I care a lot about.</p>
+
+<p>-Personal development: 3</p>
+
+<p>It’s kind of strange to rate growth 5 while I rate this a 3, but I’ll subvert this a bit to mean a more holistic growth, encompassing multiple aspects instead of just one. And in that regard, there are just some things that I neglect/don’t care so much about. Several social and emotional aspects of personal development I simply kind of ignore. They’re not things I’ll shy away from, but neither do I actively seek them out.</p>
+
+<p>-Self-respect: 2</p>
+
+<p>While I felt tremendous pride and sense of accomplishment in the moments I alluded to above, in my day to day life it isn’t really that big of a deal. If anything, I feel like I should be achieving more than I am.</p>
+
+<p>The last time someone asked me for advice, it was my good friend and roommate asking for my opinion on the composition of his Magic the Gathering deck. Not exactly the most dramatic of topics, but seeing how we both share that hobby and talk about it a lot, it’s not too surprising. As mundane as the topic is, I’m obviously pleased that he values my opinion (as I his). I don’t really have too much else to say about this apart from Believe in the heart of the cards.
+Frankly, I don’t really feel all that empowered when I think of the values I listed.</p>
+
+  </div>
+
+  <h1><a href="/2014/08/29/week7-technical.html">On the Danger of SQL Injections</a></h1>
+  <p class="author">
+    <span class="date">2014-08-29 00:00:00 -0500</span>
+  </p>
+  <div class="content">
+    <p>SQL Injections. It’s a term I’d heard about before but never actually understood until now. Simply put, SQL injection is when a malicious user is able to enter an SQL statement in an input field and have the database execute it. For example, let’s suppose you have a product that you’re selling online. You require your clients to log in in order to make a purchase. That means you need to somehow store usernames and passwords. Realistically, that means storing them in a database. There are alternatives, but chances are that it’ll be SQL based. So now, when one of your users tries to log in, the first thing you do is check if their username is in the database. So you’ll write something like this:</p>
+
+<p><code>statement = "SELECT * FROM users WHERE name ='" + userName + "';"</code></p>
+
+<p>Now imagine if some wise guy puts in something that causes the SQL statement to do something unexpected, such as inputting the following as his username:</p>
+
+<p><code>' or '1'='1</code></p>
+
+<p>The resulting statement will look something like this:</p>
+
+<p><code>SELECT * FROM users WHERE name = '' OR '1'='1';</code></p>
+
+<p>Whoops. Now instead of returning a single result, the query returns everything in the table, since ‘1’=’1’ will always evaluate to true. How the application will handle this will be different, but it’s generally not something good. A malicious user can use this to submit arbitrary SQL code and gain access to your application or wreck havoc on your database. Not something you’d want. There are several ways to avoid this. The first and most straightforward one is to make sure what the user inputs doesn’t contain unwanted characters that enable this kind of SQL injection, like quotes. But this isn’t always feasible. Imagine a user whose last name is O’Brian. This is a perfectly valid name but our system would reject it since it contains a quote. A better approach would be to simply escape the quote so that our ‘ becomes ‘’ for example. Yet not only is it easy to miss properly escaping user input at some point, it’s also not completely safe. For instance, in MySQL, characters can also be escaped by using a backslash . So someone could input something like:</p>
+
+<p><code>\'; DROP TABLE users; --</code></p>
+
+<p>We pass the input to our character escape function, prepending a ‘ before the ‘ in the input, resulting in '’. Since ‘ is now escaped twice, a query using that input will see a single ‘ as the input followed by a closing ‘, then execute the rest of the statement (DROP TABLE users;). Because this is a common yet difficult problem, many SQL implementations will include inbuilt functions to escape characters, so be sure to use those instead of making your own. A final approach, which is also probably the most secure, is to use prepared statements. Basically, instead of compounding the SQL query with user input, you make the query beforehand then pass the input as parameters to the query. Whatever the user inputs is then just passed on as data and is never “read” as part of the query. At any rate, SQL Injection is always something to keep in mind when building a database. It’s one of if not the most common attack vector, and it’s not difficult to prevent it from being an issue, as long as you think about it.</p>
+
+  </div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <span class="previous">Previous</span>
+  
+  <span class="page_number ">Page: 1 of 1</span>
+  
+    <span class="next ">Next</span>
+  
+</div>
 
 	<footer id="footer_main">
 	<hr>
