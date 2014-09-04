@@ -128,7 +128,7 @@ main img {
 	margin: auto;
 }
 
-code {
+/*code {
 	font-family: Courier;
 	border: 0.11em solid grey;
 	margin: auto;
@@ -137,7 +137,7 @@ code {
 	margin-top: 1em;
 	line-height: 2em;
 }
-
+*/
 #footer_main {
 	clear: both;
 	font-size: 0.7em;

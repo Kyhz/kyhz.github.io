@@ -12,12 +12,16 @@ There are different ways to position content in HTML to make your page look good
 
 ![Inline]({{ site.url }}/assets/inline.jpg)
 
-    .inline{
-    	display: inline;
-    	background: grey;
-    }
-	<p class="inline"> Lorem ipsum dolor...</p>
-	<p class="inline"> Lorem ipsum dolor...</p>
+{% highlight css}
+.inline{
+	display: inline;
+	background: grey;
+}
+{% endhighlight %}
+{% highlight HTML %}
+<p class="inline"> Lorem ipsum dolor...</p>
+<p class="inline"> Lorem ipsum dolor...</p>
+{% endhighlight %}
 
 Inline is the default property for some elements such as `<span>` and `<strong>`. Inline positioning displays content sequentially without any spaces or line breaks. As the name "inline" implies, it basically keeps things on the same horizantal line.
 
@@ -28,13 +32,16 @@ The image above is actually two HTML paragraphs. Normally there would be a break
 
 ![Inline-block]({{ site.url }}/assets/inline-block.jpg)
 
-    .inline-block{
-    	width: 300px;
-    	display: inline-block;
-    	background: grey;
-    }
-	<p class="inline-block">; Lorem ipsum dolor...</p>
-	<p class="inline-block"&gt; Lorem ipsum dolor...</p>
+{% highlight css}
+.inline{
+    display: inline;
+    background: grey;
+}
+{% endhighlight %}
+{% highlight HTML %}
+<p class="inline-block"> Lorem ipsum dolor...</p>
+<p class="inline-block"> Lorem ipsum dolor...</p>
+{% endhighlight %}
 
 Inline-block is a method of displaying HTML in block on the same horizantal line. Normally display: block displays HTML elements stacked vertically. Display: inline-block stacks them horizantally. It can be used as an alternative to float.
 

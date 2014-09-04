@@ -31,53 +31,51 @@
 
 <p>Well, a car is pretty complicated. Even the simplest car these days is a small engineering miracle filled with electronics and fuzzy dice. What do we know what is important here? And that’s really the first question you should be asking yourself when working with classes (the zeroth question of course is, “should I be using a class to model this?”). The answer to this is that it depends. It depends on what the User needs. Here, User could mean an actual person using your software, but it could also mean another piece of software if you’re working on a big project. But let’s suppose my user has low expectations and they just care about the car moving.</p>
 
-<pre><code>class Car
-	def initialize
-		@moving? = false
-	end
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Car</span>
+	<span class="k">def</span> <span class="nf">initialize</span>
+		<span class="vi">@moving</span><span class="p">?</span> <span class="o">=</span> <span class="kp">false</span>
+	<span class="k">end</span>
 
-	def press_gas_pedal
-		@moving? = true
-	end
+	<span class="k">def</span> <span class="nf">press_gas_pedal</span>
+		<span class="vi">@moving</span><span class="p">?</span> <span class="o">=</span> <span class="kp">true</span>
+	<span class="k">end</span>
 
-	def press_brake_pedal
-		@moving? = false
-	end
-end
-</code></pre>
+	<span class="k">def</span> <span class="nf">press_brake_pedal</span>
+		<span class="vi">@moving</span><span class="p">?</span> <span class="o">=</span> <span class="kp">false</span>
+	<span class="k">end</span>
+<span class="k">end</span></code></pre></div>
 
 <p>Sweet, now we can make a new car object (which is by default not moving), call the press_gas_pedal method to make it go, and the press_brake_pedal one to stop it. But that’s not really how cars work. I mean, the result of pressing the gas pedal is that the car moves, but there’s actually quite a lot of mechanical steps in between the cause and the effect. This kind of situation also arises a lot during coding. The User however doesn’t care about all that. The User wants the car to move. They don’t care that gas pedal controls the throttle valve which allows more or less air into the engine etc, etc… They don’t need or even want to know about it. Just like the engine and most of the parts of the car doing work are hidden away underneath the hood, you’ll typically want to “hide” the internal workings of your class using the keyword “private”. What that means is that methods and variables that are private cannot be accessed from outside, but only from within the object itself.</p>
 
-<pre><code>class Car
-	def initialize
-		@moving? = false
-	end
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Car</span>
+	<span class="k">def</span> <span class="nf">initialize</span>
+		<span class="vi">@moving</span><span class="p">?</span> <span class="o">=</span> <span class="kp">false</span>
+	<span class="k">end</span>
 
-	def press_gas_pedal
-		make_car_move
-	end
+	<span class="k">def</span> <span class="nf">press_gas_pedal</span>
+		<span class="n">make_car_move</span>
+	<span class="k">end</span>
 
-	def press_brake_pedal
-		make_car_stop
-	end
+	<span class="k">def</span> <span class="nf">press_brake_pedal</span>
+		<span class="n">make_car_stop</span>
+	<span class="k">end</span>
 
-	private
-	#stuff below is private
+	<span class="kp">private</span>
+	<span class="c1">#stuff below is private</span>
 
-	def make_car_move
-		open_throttle_valve
-		call_ECU
-		praise_omnissiah
-		#...
-		@moving? = true
-	end
+	<span class="k">def</span> <span class="nf">make_car_move</span>
+		<span class="n">open_throttle_valve</span>
+		<span class="n">call_ECU</span>
+		<span class="n">praise_omnissiah</span>
+		<span class="c1">#...</span>
+		<span class="vi">@moving</span><span class="p">?</span> <span class="o">=</span> <span class="kp">true</span>
+	<span class="k">end</span>
 	
-	def make_car_stop
-		#...
-		@moving? = false
-	end
-end
-</code></pre>
+	<span class="k">def</span> <span class="nf">make_car_stop</span>
+		<span class="c1">#...</span>
+		<span class="vi">@moving</span><span class="p">?</span> <span class="o">=</span> <span class="kp">false</span>
+	<span class="k">end</span>
+<span class="k">end</span></code></pre></div>
 
 <p>Well, what’s the point of this? For one, it’s simpler for the User. When I’m using the car object I don’t have to worry about how to transmit the power from the engine to the wheels. I just press the pedal to make it go. The User only needs to worry about how to use the car, and not so much about how it works. Second, it’s safer this way. Letting the User have direct control over the amount of fuel injected into the combustion chamber could be potentially disastrous. Similarly, having public access to some internal variables or methods of your program can lead to unfortunate situations. A good rule of thumb is to keep everything private unless it’s a feature you want your User to have access to.</p>
 
