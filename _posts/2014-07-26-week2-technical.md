@@ -12,7 +12,7 @@ There are different ways to position content in HTML to make your page look good
 
 ![Inline]({{ site.url }}/assets/inline.jpg)
 
-{% highlight css}
+{% highlight css %}
 .inline{
 	display: inline;
 	background: grey;
@@ -32,7 +32,7 @@ The image above is actually two HTML paragraphs. Normally there would be a break
 
 ![Inline-block]({{ site.url }}/assets/inline-block.jpg)
 
-{% highlight css}
+{% highlight css %}
 .inline{
     display: inline;
     background: grey;
