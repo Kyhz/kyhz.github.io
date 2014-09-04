@@ -38,6 +38,7 @@
 	def press_gas_pedal
 		@moving? = true
 	end
+
 	def press_brake_pedal
 		@moving? = false
 	end
@@ -50,14 +51,18 @@ end
 	def initialize
 		@moving? = false
 	end
+
 	def press_gas_pedal
 		make_car_move
 	end
+
 	def press_brake_pedal
 		make_car_stop
 	end
+
 	private
 	#stuff below is private
+
 	def make_car_move
 		open_throttle_valve
 		call_ECU
@@ -65,6 +70,7 @@ end
 		#...
 		@moving? = true
 	end
+	
 	def make_car_stop
 		#...
 		@moving? = false

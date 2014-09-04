@@ -1,6 +1,10 @@
 ---
 layout: blog-post
 title: Classes and Modeling
+tags:
+- Technical
+- Ruby
+- OOP
 ---
 Most programming languages come with a set of in-built data types that we can manipulate. Integers, strings, arrays, etc... But oftentimes a situation arises when we need to represent something and it just doesn't really make sense to use those data types. If we look at a real-world object, it has a multitude of properties. Now, it's asking a bit too much to recreate that object with all its characteristics inside our program, but if we focus on just a few of them, it can be modeled quite nicely with what is called a Class. Classes are basically blueprints for objects. We could be making a class for a deck of cards or for a restaurant, or even something totally abstract like a vector space. It doesn't really matter as long as you identify and tell the class what properties you want your object to have. But let's stick with something a little more tangible here and try to write a class for a car.
 
@@ -14,6 +18,7 @@ Well, a car is pretty complicated. Even the simplest car these days is a small e
 		def press_gas_pedal
 			@moving? = true
 		end
+
 		def press_brake_pedal
 			@moving? = false
 		end
@@ -25,14 +30,18 @@ Sweet, now we can make a new car object (which is by default not moving), call t
 		def initialize
 			@moving? = false
 		end
+
 		def press_gas_pedal
 			make_car_move
 		end
+
 		def press_brake_pedal
 			make_car_stop
 		end
+
 		private
 		#stuff below is private
+
 		def make_car_move
 			open_throttle_valve
 			call_ECU
@@ -40,6 +49,7 @@ Sweet, now we can make a new car object (which is by default not moving), call t
 			#...
 			@moving? = true
 		end
+		
 		def make_car_stop
 			#...
 			@moving? = false

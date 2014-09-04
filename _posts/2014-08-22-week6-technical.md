@@ -1,6 +1,9 @@
 ---
 layout: blog-post
 title: Mixins and Multiple Inheritance
+tags:
+- Technical
+- Ruby
 ---
 
 I talked a little bit about modules in a previous post, but let's go more in depth this time. Let's review a bit first. Modules are similar to classes in that they are abstract structures. They both can both contain methods and constants. However one of the big differences is that modules cannot be instantiated. Typically, a class method is called through an object that was created beforehand. Module methods do not need an object, and are really what is called a namespace, i.e a frame of reference for what you mean when you call a function. For that reason, it doesn't make sense to store variables in a module. This is one thing to keep in mind if you're trying to decide whether to use a module or a class. So what's the advantage of using a module, then? The answer is something called mixin.

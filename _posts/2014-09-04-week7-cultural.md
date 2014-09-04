@@ -1,6 +1,9 @@
 ---
 layout: blog-post
 title: On Affirmation
+tags:
+- Cultural
+- Stereotype Threat
 ---
 
 The values that really stand out for me are: Accomplishment, Commitment, Excitement, Growth, Personal development, Self-respect. Staring at this list, one thing that jumps out to me is that they're all deeply personal. It may speak something about either my personality or my experiences, or both. I cannot tell. In any case, the moments I've felt the strongest positive emotions were intrinsically tied to things I accomplished (mostly) on my own. If I had to pick one of the values mentioned earlier, it would probably be Accomplishment. The feeling of having done something worthwhile is a rare and cherished one (at least in my case). Doubly so when it is acknowledged by others. In a similar vein, personal failures are also something that affect me greatly. Success or failure in groups don't elicit the same elation or despair in me. Those feelings are mitigated when others are involved ("I had help." and "We all did badly.") So maybe the value I care about the most is actually Personal Accomplishment.

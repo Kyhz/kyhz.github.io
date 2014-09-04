@@ -122,12 +122,13 @@ main p {
 }
 
 main img {
+	width: 80%;
 	padding: 1em;
 	display: block;
 	margin: auto;
 }
 
-.code {
+code {
 	font-family: Courier;
 	border: 0.11em solid grey;
 	margin: auto;
@@ -141,7 +142,6 @@ main img {
 #footer_main {
 	clear: both;
 	font-size: 0.7em;
-	margin-top: 10em;
 }
 
 .home_list {
@@ -178,4 +178,8 @@ main img {
 
 .index_side p {
 	width: 100%;
+}
+
+.pagination {
+	margin-top: 10em;
 }

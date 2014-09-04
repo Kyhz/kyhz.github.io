@@ -1,6 +1,9 @@
 ---
 layout: blog-post
 title: Go Computing
+tags:
+- Cultural
+- Go
 ---
 Games have long been a subfield of computer AI. In 1957, Herbert Simon predicted that in 10 years, computers would have outclassed the best human players in the game of chess. Well, it took a little longer than that, but it eventually did happen. Supercomputer Deep Blue beat the highest ranked chess player at the time Garry Kasparov in 1997. And since then, computers have only gotten more powerful, while humans have pretty much stayed the same (one could argue that point, but it's certainly not on the level of Moore's Law). So if chess, in all its complexity, couldn't withstand the test of the silicon age, then who else could possibly put up a fight? Allow me to introduce to you Go. No, not the programming language by Google, although that one's cool too. The Eastern board game of Go.
 

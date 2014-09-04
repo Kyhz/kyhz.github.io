@@ -1,6 +1,9 @@
 ---
 layout: blog-post
 title: Pairing and Feedback
+tags:
+- Cultural
+- Pairing
 ---
 <h2 class="article_subtitle">Pairing</h2>
 

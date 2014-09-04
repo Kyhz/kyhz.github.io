@@ -1,6 +1,9 @@
 ---
 layout: blog-post
 title: Why is Javascript so popular?
+tags:
+- Technical
+- Javascript
 ---
 <h2 class="article_subtitle">A language for the Web</h2>
 

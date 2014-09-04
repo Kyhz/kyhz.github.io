@@ -1,6 +1,10 @@
 ---
 layout: blog-post
 title: Enumerable#group_by
+tags:
+- Technical
+- Ruby
+- Enumerable
 ---
 So let's talk Ruby. Specifically, about a module method of Enumerable called group_by. Let's first go over what the heck a module is. If you're familiar with object-oriented programming, you know what a class is. If you're not, then think of a class as a blueprint for a thing. You define that thing's properties and ways to maniputale and access information about that thing inside a class. Using this blueprint, you can then create new instances of that thing which will have the properties you defined available to them. Ruby has classes and they are great for a lot of things, but they also have this thing called Modules. They're very similar to classes in that they also contain constants and functions, but the difference is that you don't need an actual object to call the functions defined inside a module, unlike classes. For instance Math is a module. If you want to calculate a square root or a cosine, you'll need to call Math.sqrt() or Math.cos(). Enumerable is one of those modules. And it works with arrays and hashes in particular. But wait, didn't I just say modules didn't need objects to be called, and arrays and hashes are, well, objects? Well that's because the Enumerable module was _mixed in_. But let's just ignore that part since I haven't yet actually managed to talk about the thing I'm supposed to be blogging about.
 

@@ -1,6 +1,9 @@
 ---
 layout: blog-post
 title: Stereotype Threat
+tags:
+- Cultural
+- Stereotype Threat
 ---
 I've been lucky enough to have been born in a very beneficial situation as far as stereotypes and prejudice are concerned. I'm a half-white, half-asian male from a middle class family. All things considered, it's one of the most enviable positions to be in our current society. As such, I can't say I've been exposed to a lot of stereotype threat compared to some people. Of course, it's also much more likely that I have in fact been exposed to it but haven't realized it. It's hard for me to explain what my strategy for something I haven't experienced on a conscious level would be, but I think I would try to distance myself from whatever social identity is at stake. Maybe it's because I have a mixed background (born in the US but grew up in Europe, white and asian descent) but it's been easy for me to disassociate myself from some of these things. Again, this relies on there being a conscious realization of the stereotype threat, which is not at all a given. Perhaps something that could work to mitigate those effects would be to see yourself through multiple lenses not focus so much on a single aspect.
 
