@@ -4,9 +4,9 @@ title: CrossedUp
 ---
 <div class="main_wrapper index_main">
   {% for post in paginator.posts %}
-    <span class="blog_post_link"><a href="{{ post.url }}">{{ post.title }}</a></span>
-    <p class="author">
-      <span class="date">{{ post.date || date_to_string }}</span>
+    <p class="blog_post_link">
+      <span class="date">{{ post.date || date_to_string }}</span><br>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </p>
   {% endfor %}
 
