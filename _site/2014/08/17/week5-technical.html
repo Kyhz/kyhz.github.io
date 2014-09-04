@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Classes and Modeling</title>
+	<meta name="generator" content="Jekyll v2.3.0">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="/fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
+</head>
+<body class="container">
+	<header id="main_header">
+	<h1 id="header_titles">Crossed<br><span class="header_title_alt">up</span></h1>
+	<nav class="header_nav_bar">
+		<ul class="nav_bar">
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/projects.html">Projects</a></li>
+			<li><a href="https://twitter.com/dat_kyhz" target="_blank">Twitter</a></li>
+		</ul>
+	</nav>
+</header>
+
+	<main>
+	<header class="article_header">
+		<h1>Classes and Modeling</h1>
+		<p>17 Aug 2014</p>
+	</header>
+	<div class="main_wrapper">
+		<p>Most programming languages come with a set of in-built data types that we can manipulate. Integers, strings, arrays, etc… But oftentimes a situation arises when we need to represent something and it just doesn’t really make sense to use those data types. If we look at a real-world object, it has a multitude of properties. Now, it’s asking a bit too much to recreate that object with all its characteristics inside our program, but if we focus on just a few of them, it can be modeled quite nicely with what is called a Class. Classes are basically blueprints for objects. We could be making a class for a deck of cards or for a restaurant, or even something totally abstract like a vector space. It doesn’t really matter as long as you identify and tell the class what properties you want your object to have. But let’s stick with something a little more tangible here and try to write a class for a car.</p>
+
+<p>Well, a car is pretty complicated. Even the simplest car these days is a small engineering miracle filled with electronics and fuzzy dice. What do we know what is important here? And that’s really the first question you should be asking yourself when working with classes (the zeroth question of course is, “should I be using a class to model this?”). The answer to this is that it depends. It depends on what the User needs. Here, User could mean an actual person using your software, but it could also mean another piece of software if you’re working on a big project. But let’s suppose my user has low expectations and they just care about the car moving.</p>
+
+<pre><code>class Car
+	def initialize
+		@moving? = false
+	end
+
+	def press_gas_pedal
+		@moving? = true
+	end
+	def press_brake_pedal
+		@moving? = false
+	end
+end
+</code></pre>
+
+<p>Sweet, now we can make a new car object (which is by default not moving), call the press_gas_pedal method to make it go, and the press_brake_pedal one to stop it. But that’s not really how cars work. I mean, the result of pressing the gas pedal is that the car moves, but there’s actually quite a lot of mechanical steps in between the cause and the effect. This kind of situation also arises a lot during coding. The User however doesn’t care about all that. The User wants the car to move. They don’t care that gas pedal controls the throttle valve which allows more or less air into the engine etc, etc… They don’t need or even want to know about it. Just like the engine and most of the parts of the car doing work are hidden away underneath the hood, you’ll typically want to “hide” the internal workings of your class using the keyword “private”. What that means is that methods and variables that are private cannot be accessed from outside, but only from within the object itself.</p>
+
+<pre><code>class Car
+	def initialize
+		@moving? = false
+	end
+	def press_gas_pedal
+		make_car_move
+	end
+	def press_brake_pedal
+		make_car_stop
+	end
+	private
+	#stuff below is private
+	def make_car_move
+		open_throttle_valve
+		call_ECU
+		praise_omnissiah
+		#...
+		@moving? = true
+	end
+	def make_car_stop
+		#...
+		@moving? = false
+	end
+end
+</code></pre>
+
+<p>Well, what’s the point of this? For one, it’s simpler for the User. When I’m using the car object I don’t have to worry about how to transmit the power from the engine to the wheels. I just press the pedal to make it go. The User only needs to worry about how to use the car, and not so much about how it works. Second, it’s safer this way. Letting the User have direct control over the amount of fuel injected into the combustion chamber could be potentially disastrous. Similarly, having public access to some internal variables or methods of your program can lead to unfortunate situations. A good rule of thumb is to keep everything private unless it’s a feature you want your User to have access to.</p>
+
+	</div>
+</main>
+
+	<footer id="footer_main">
+	<hr>
+	<p>&copy;2014 Raphael Ho
+	</p>
+</footer>
+
+</body>

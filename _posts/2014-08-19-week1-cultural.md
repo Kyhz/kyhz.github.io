@@ -1,0 +1,10 @@
+---
+layout: blog-post
+title: The DBC Culture
+tags:
+- DBC
+- Cultural
+---
+One of the big selling points of DBC for me was the focus on peer and group programming, so I definitely had my mind focused on that aspect. Watching the video reinforces my belief that it's a big part of what constitutes the DBC culture. It's pretty clear to anyone who's hung around me for any length of time that I'm an introvert. Not pathologically so by any means, but I still tend to find social interactions draining, and it's sometimes difficult for me to reach out to others. I recognize that that can be a hinderance in the types of work environments a lot of developers find themselves in, and so it's something I wanted to work on, and I think DBC makes a pretty significant effort to make that a centerpoint of their philosophy. I enjoyed learning a bit about Shereef and how DBC came to be. I liked that he made it clear that he wasn't trying for a "school" education kind of thing, which I think some people might have.
+
+Another one of the reasons I was drawn to DBC over other programs was the seriousness of it. I saw some other programs that advertised a 10 week course at a rate of 20 hours per week, promising you'll be a developer at the end. Contrast that with DBC who says we'll be working 70+ hours, and that's not even counting the amount of time put in during Phase-0. To me, that means honesty, and it also means that these people know what what it takes to shape someone into not just another code monkey, but an actual developer. I'm excited to get started in Phase 1 and meet everyone face to face, but I'm of course also nervous. Shereef did address some of these worries which did help a lot. I think he did a got job of driving in that it was going to be a lot of work, and that you don't get anything if you're not willing to put in the effort.

@@ -1,0 +1,36 @@
+---
+layout: blog-post
+title: Website Designs
+tags:
+- Design
+- Frontend
+- Technical
+---
+<h2 class="article_subtitle"><a href="https://twitter.com/" target="_blank">Twitter</a></h2>
+
+I wouldn't call myself the biggest Twitter addict, but it is a tool I spend a lot of time on. Being a social media site, the content served is 100% personalized, but the design is mostly uniform. Here is a picture of my own Twitter homepage using the webclient.
+
+![Twitter webclient]({{ site.url }}/assets/twitter.jpg)
+
+I'm only one background picture of Haman Karn away from the default look for my feed, so this'll do for our armchair design analysis. The first thing that stands out is the numbers below your profile indicating the number of tweets, following, and followers. Directly below it is another key feature: the "Compose new Tweet" box. This is where you gush out to the internet about your cat, so obviously it deserves to be salient. Although off-centered, it is highlit due to the different, slightly darker background. The third focal point is at the center of the screen. Since the design doesn't have too many eye-catchers and is fairly "flat", our eyes tend to go towards the center. This is where your Twitter feed is, and where the information resides, so clearly a key aspect of the site.
+
+The design is rather simple and feels less clutered to me than say, Facebook. Different elements are boxed which helps, in my opinion, keep the design elegant and functional. The header contains useful navigational stuff, like a link to your profile and a search bar. Note here that the elements aren't boxed, which makes it clear it's not part of the main content. Despite the praise I give it, the Twitter webclient isn't without faults. It took me quite a while to figure out where I was supposed to click to get a direct link to a particular Tweet (you're supposed to click the time the Tweet was made, which is tenuous logic at best), and you have to jump through hoops to get a full-sized version of any picture that shows up on your feed (and I don't mean a pop-up window). Also, those assholes spoiled the score of the World Cup games on the sidebar.
+
+<h2 class="article_subtitle"><a href="http://shoryuken.com/" target="_blank">Shoryuken</a></h2>
+
+Shoryuken is a website that focuses on news relating to fighting games (the virtual kind, mind you). I visit this site pretty much daily for the breakdown on what's happening, and it also has a useful wiki and forum that cover a pretty huge amount of games.
+
+![Shoryuken.com homepage]({{ site.url }}/assets/shoryuken.jpg)
+
+The two things that stand out the most to me when I look at the site is the big SRK logo at the top of the header, and the headlines. The color scheme is pretty simple: black on white. You don't get much more contrast than that. Having a nice logo is a plus, but it's also used as a Home button, which is naturally quite useful when navigating to other parts of the site. The second attention-grabber is the headlines, thanks to this one neat trick newspapers have been using for over a century: larger typeface. Clicking on either the headline or the accompanying picture will bring you to the article itself, which again is intuitive/expected behavior. Since it has a somewhat niche audience, it can afford to keep the content density a bit lower compared to a mainstream news website. We can see that the posts are ordered one after the other, with only one aside showing some less relevant information.
+
+The header, in addition to the logo, search bar, and social media thingamajings, sports two sets of navigation bars: one with the various parts of the site (forum, shop, tournament dates, etc...) and a second below that which is a list of some popular games currently. Hovering over the game icons brings a drop-down list of topics relevant to that particular game. For people looking for information about a specific game, this is great since it's easily accessible and also high visibility. For people who primarily visit the website for the news, it is a little distracting and I personally think they could make it less prevalent on screen.
+
+<h2 class="article_subtitle"><a href="https://twitch.tv/" target="_blank">Twitch</a></h2>
+Another relatively popular site. This is a streaming website whose focus is on livestreaming. Video games in particular are a favorite. 
+
+![Dreamhack twitch channel, currently broadcasting a Street Fighter 4 tournament]({{ site.url }}/assets/twitch.jpg)
+
+The main reason to visit Twitch is to watch videos, and the sites design really reflects that. Two columns frame the center area which contains the video. The video itself occupies a solid majority of the screen, so no complaints there. Twitch is a website where you tend to stay for an extended period of time on the same page, so having the video be centered and occupy a nice, large portion of the screen is quite nice. The left column with a darker background serves as a navbar. The various options also have a small icon next to them, which helps visually identify the tabs. Above the video is the title of the broadcast and includes the channel name and the type of broadcast as a subtitle. Below the video player is an option to follow or subscribe to the channel (which are much like YouTube channels), and if you scroll beyond that you'll find a description of the channel. But all this really just helps frame the main content.
+
+The column on the right contains the chat, which is the second piece of interactive content, although frankly I do appreciate the option to hide it sometimes. It draws the attention for a number of reasons, one of which is that for bigger channels in particular, it is constantly moving, with older posts being replaced by new ones. Furthermore, the names are in rather bright colors, and there are usually a lot of emoticons which also tend to stand out. In addition to being toggleable, the right column can also be repurposed to show archived videos. The site had a makeover about a year ago and I was at first kind of skeptic of the changes, but over time I came to embrace it. The way the site is designed to focus on the primary content is a hit in my book, and it's a place I often find myself spending a lot of time on.

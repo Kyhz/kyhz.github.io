@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: On the Danger of SQL Injections
+title: The Danger of SQL Injections
 ---
 
 SQL Injections. It's a term I'd heard about before but never actually understood until now. Simply put, SQL injection is when a malicious user is able to enter an SQL statement in an input field and have the database execute it. For example, let's suppose you have a product that you're selling online. You require your clients to log in in order to make a purchase. That means you need to somehow store usernames and passwords. Realistically, that means storing them in a database. There are alternatives, but chances are that it'll be SQL based. So now, when one of your users tries to log in, the first thing you do is check if their username is in the database. So you'll write something like this:
