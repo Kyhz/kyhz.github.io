@@ -142,6 +142,7 @@ code {
 #footer_main {
 	clear: both;
 	font-size: 0.7em;
+	margin-top: 10em;
 }
 
 .home_list {
@@ -181,5 +182,5 @@ code {
 }
 
 .pagination {
-	margin-top: 10em;
+	margin-top: -10em;
 }
