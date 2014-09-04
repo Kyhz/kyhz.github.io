@@ -4,12 +4,14 @@ title: CrossedUp
 ---
 <main>
   <div class="main_wrapper index_main">
-    {% for post in paginator.posts %}
-      <p>
-        <span class="date">{{ post.date || date_to_string }}</span><br>
-        <a class="blog_post_link" href="{{ post.url }}">{{ post.title }}</a>
-      </p>
-    {% endfor %}
+    <ul class="home_list">
+      {% for post in paginator.posts %}
+        <li>
+          <span class="date">{{ post.date || date_to_string }}</span><br>
+          <a class="blog_post_link" href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
 
     <!-- Pagination links -->
     <div class="pagination">
