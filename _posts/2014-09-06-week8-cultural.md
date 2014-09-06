@@ -1,0 +1,10 @@
+---
+layout: blog-post
+title: The Compass... of Shame
+tags:
+- Cultural
+- DBC
+---
+![Shaming Compass](/assets/compass_of_shame.png)
+
+The last big emotional conflict I had was about a year ago. Without going too much into details, I had told a family member I would do something for them and ended up not delivering. It wasn't something like helping them move or watching their dog for a day; it involved a lot of time and resources. Once it became apparent that it wasn't going to happen, I felt miserable. I blamed myself (it was totally and entirely my fault, mostly because I did not manage my time well) and avoided them as much as possible. Basically, I fell on the North-East side of the compass of shame. Now, over a year later, I'm certain I would react the same way emotionally. I don't think people change that much in such a relatively short period of time. In terms of concrete actions though, avoidance is not what I should have done in that situation. If anything, I should have tried to get in touch more and try to make the best of what time was left. And while I don't know how quantifiable the impact self-blame had on this task, it is also certainly energy that could have been spent trying to get as much done as possible. If I could go back, I would try to do just that, and also reach out for outside help. Instead, I tried to do everything by myself and "fix" things best I could. Of course, if I could go back in time I'd just go back further and do the damn thing so the whole situation wouldn't have arisen. If wishes were fishes... It's a real shame (heh) because I really like this person, but I always feel uncomfortable when I see them because of what happened (spoilers: I didn't get it done). They were as expected quite crossed at the time, but since then haven't brought it up or held it against me in anyway. Yet I still feel ashamed whenever I'm around them, a year later. I suspect it's something I will have to live with for a while. 
