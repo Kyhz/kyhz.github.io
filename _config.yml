@@ -8,3 +8,5 @@ defaults:
        author: "Raphael Ho"
 paginate: 5
 paginate_path: "/page:num"
+highlighter: pygments
+encoding: utf-8
