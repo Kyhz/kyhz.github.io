@@ -4,7 +4,6 @@ body {
 }
 
 .container {
-	width: 75%;
 	text-align: left;
 	margin: 0 auto;
 	padding: 0;
@@ -12,19 +11,22 @@ body {
 }
 
 #main_header {
+	width: 100%;
 	background: #1FEDDF;
-	text-align: center;
-	border: 2px;
-	padding: 1em 0 0 0;
-	margin-top: -3em;
+	text-align: left;
+	top:0;
+	padding: 1em 0 1em 0;
+	margin-bottom: -1px;
 }
 
 #header_titles {
 	font-family: bebasregular, sans-serif;
 	color: #138A82;
 	padding-top: 0.5em;
-	font-size: 5em;
+	padding-left: 1em;
+	font-size: 1.5em;
 	line-height: 0.5em;
+	float: left;
 }
 
 #header_titles .header_title_alt {
@@ -38,28 +40,40 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #13BFB4;
 }
 
 .nav_bar li {
 	display: inline;
-	float: left;
+	float: right;
+	width: 5em;
+	padding-top: 0.1em;
 }
 
 .nav_bar a:link, .nav_bar a:visited {
-    display: block;
-    width: 9em;
-    font-weight: bold;
     color: #FFFFFF;
-    background-color: #13BFB4;
     text-align: center;
-    padding: 4px;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
-.nav_bar a:hover, .nav_bar a:active {
-    background-color: #138A82;
+a:link, a:visited {
+	color: #138A82;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1FEDDF;
+    transition-duration: 0.2s;
+}
+
+#header_titles a:hover {
+	color: #138A82;
+}
+
+.fa-envelope-square:hover, .fa-linkedin-square:hover, .fa-github-square:hover, .fa-google-plus-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram:hover {
+    color: #138A82;
+    background-color: #1FEDDF;
+    border-radius: 10px;
+    transition-duration: 0.2s;
 }
 
 main {
@@ -178,4 +192,79 @@ main img {
 
 .index_side p {
 	width: 100%;
+}
+
+/* Parallax stuff */
+
+
+html,
+body {
+    height: 100%;
+}
+.skrollr-desktop body {
+    height: 100% !important;
+}
+
+.parallax-image-wrapper {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.parallax-image-wrapper-100 {
+    height: 100%;
+    top: -100%;
+}
+.parallax-image {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.parallax-image-100 {
+    height: 100%;
+    top: 0;
+}
+.parallax-image.skrollable-between {
+    display: block;
+}
+.no-skrollr .parallax-image-wrapper {
+    display: none !important;
+}
+#skrollr-body {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+}
+.gap {
+    background: transparent center no-repeat;
+    background-size: cover;
+}
+.skrollr .gap {
+    background: transparent !important;
+}
+.gap-100 {
+    height: 100%;
+}
+
+.parallax-text-blog {
+	position:absolute;
+	top:15%;
+	left:70%;
+	color: #FFF;
+	font-size: 3em;
+}
+
+.parallax-text-sub {
+	position:absolute;
+	top:75%;
+	left:10%;
+	color: #FFF;
+	font-style: italic;
+	font-size: 2em;
+	margin: -0em 0em 0em -1.5em;
 }

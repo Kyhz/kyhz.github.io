@@ -1,56 +1,131 @@
 <!DOCTYPE html>
+
 <head>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="./favicon.ico" />
-	<title>CrossedUp</title>
-	<link rel="stylesheet" href="./fonts/fira.css">
-	<link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>CrossedUp</title>
+    <link rel="stylesheet" href="./fonts/fira.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/font-awesome.min.css">
 </head>
+
 <body>
-	<div class="container">
-		<header id="main_header">
-			<h1 id="header_titles">Crossed<br><span class="header_title_alt">up</span></h1>
-			<nav class="header_nav_bar">
-				<ul class="nav_bar">
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="./projects.html">Projects</a></li>
-					<li><a href="https://twitter.com/dat_kyhz" target"_blank">Twitter</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<header class="article_header">
-			</header>
-			<div class="main_wrapper index_main">
-				<section>
-					<ul class="home_list">
-						<li><span class="date">August 24th 2014</span><br><a href="./blog-posts/week7_cultural.html" class="blog_post_link">Week 7 Cultural</a></li>
-						<li><span class="date">August 24th 2014</span><br><a href="./blog-posts/week7_technical.html" class="blog_post_link">Week 7 Technical</a></li>
-						<li><span class="date">August 24th 2014</span><br><a href="./blog-posts/week6_cultural.html" class="blog_post_link">Week 6 Cultural</a></li>
-						<li><span class="date">August 22nd 2014</span><br><a href="./blog-posts/week6_technical.html" class="blog_post_link">Week 6 Technical</a></li>
-						<li><span class="date">August 17th 2014</span><br><a href="./blog-posts/week5_cultural.html" class="blog_post_link">Week 5 Cultural</a></li>
-						<li><span class="date">August 17th 2014</span><br><a href="./blog-posts/week5_technical.html" class="blog_post_link">Week 5 Technical</a></li>
-						<li><span class="date">August 9th 2014</span><br><a href="./blog-posts/week4_cultural.html" class="blog_post_link">Week 4 Cultural</a></li>
-						<li><span class="date">August 9th 2014</span><br><a href="./blog-posts/week4_technical.html" class="blog_post_link">Week 4 Technical</a></li>
-						<li><span class="date">August 1st 2014</span><br><a href="./blog-posts/week3_cultural.html" class="blog_post_link">Week 3 Cultural</a></li>
-						<li><span class="date">July 31st 2014</span><br><a href="./blog-posts/week3_technical.html" class="blog_post_link">Week 3 Technical</a></li>
-						<li><span class="date">July 26th 2014</span><br><a href="./blog-posts/week2_technical.html" class="blog_post_link">Week 2 Technical</a></li>
-						<li><span class="date">July 20th 2014</span><br><a href="./blog-posts/wireframe_sites.html" class="blog_post_link">A More Detailed Look at The Twitter Webclient</a></li>
-						<li><span class="date">July 19th 2014</span><br><a href="./blog-posts/week1_cultural.html" class="blog_post_link">Week 1 Cultural</a></li>
-						<li><span class="date">July 19th 2014</span><br><a href="./blog-posts/week1_technical.html" class="blog_post_link">Week 1 Technical</a></li>
-					</ul>
-				</section>
-			</div>
-			<aside class="index_side">
-				<h2>About me</h2>
-				<p>My name's Raphael Ho.<br>This is my blog.</p>
-			</aside>
-		</main>
-		<footer id="footer_main">
-			<hr>
-			<p>&copy;2014 Raphael Ho
-			</p>
-		</footer>
-	</div>
+
+	<div class="parallax-image-wrapper parallax-image-wrapper-100" data-anchor-target="#main_header + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+        <div class="parallax-image parallax-image-100" style="background-image:url(./IMAG0307.jpg)" data-anchor-target="#main_header + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+        	<h1 class="parallax-text-blog">
+        	    Placeholder text, I hate parallax scrolling
+        	</h1>
+        	<h1 class="parallax-text-sub">
+        	    "Holy smokes there's even more!"
+        	</h1>
+        </div>
+        <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+    </div>
+
+    <div id="skrollr-body">
+        <header id="main_header">
+            <h1 id="header_titles"><a href="./index.html">Crossed<br><span class="header_title_alt">up</span></a>
+            </h1>
+            <nav class="header_nav_bar">
+                <ul class="nav_bar">
+                    <li><a href="https://www.google.com/+Rapha%C3%ABlHo" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/raphael.ho.73" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li><a href="https://github.com/Kyhz/" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/dat_kyhz" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="gap gap-100" style="background-image:url(./IMAG0307.jpg);"></div>
+        <main>
+            <header class="article_header">
+            </header>
+            <div class="main_wrapper index_main">
+                <section>
+                    <ul id="anchor" class="home_list">
+                        <li>
+                            <span class="date">August 24th 2014</span>
+                            <br><a href="./blog-posts/week7_cultural.html" class="blog_post_link">Week 7 Cultural</a>
+                        </li>
+                        <li>
+                            <span class="date">August 24th 2014</span>
+                            <br><a href="./blog-posts/week7_technical.html" class="blog_post_link">Week 7 Technical</a>
+                        </li>
+                        <li>
+                            <span class="date">August 24th 2014</span>
+                            <br><a href="./blog-posts/week6_cultural.html" class="blog_post_link">Week 6 Cultural</a>
+                        </li>
+                        <li>
+                            <span class="date">August 22nd 2014</span>
+                            <br><a href="./blog-posts/week6_technical.html" class="blog_post_link">Week 6 Technical</a>
+                        </li>
+                        <li>
+                            <span class="date">August 17th 2014</span>
+                            <br><a href="./blog-posts/week5_cultural.html" class="blog_post_link">Week 5 Cultural</a>
+                        </li>
+                        <li>
+                            <span class="date">August 17th 2014</span>
+                            <br><a href="./blog-posts/week5_technical.html" class="blog_post_link">Week 5 Technical</a>
+                        </li>
+                        <li>
+                            <span class="date">August 9th 2014</span>
+                            <br><a href="./blog-posts/week4_cultural.html" class="blog_post_link">Week 4 Cultural</a>
+                        </li>
+                        <li>
+                            <span class="date">August 9th 2014</span>
+                            <br><a href="./blog-posts/week4_technical.html" class="blog_post_link">Week 4 Technical</a>
+                        </li>
+                        <li>
+                            <span class="date">August 1st 2014</span>
+                            <br><a href="./blog-posts/week3_cultural.html" class="blog_post_link">Week 3 Cultural</a>
+                        </li>
+                        <li>
+                            <span class="date">July 31st 2014</span>
+                            <br><a href="./blog-posts/week3_technical.html" class="blog_post_link">Week 3 Technical</a>
+                        </li>
+                        <li>
+                            <span class="date">July 26th 2014</span>
+                            <br><a href="./blog-posts/week2_technical.html" class="blog_post_link">Week 2 Technical</a>
+                        </li>
+                        <li>
+                            <span class="date">July 20th 2014</span>
+                            <br><a href="./blog-posts/wireframe_sites.html" class="blog_post_link">A More Detailed Look at The Twitter Webclient</a>
+                        </li>
+                        <li>
+                            <span class="date">July 19th 2014</span>
+                            <br><a href="./blog-posts/week1_cultural.html" class="blog_post_link">Week 1 Cultural</a>
+                        </li>
+                        <li>
+                            <span class="date">July 19th 2014</span>
+                            <br><a href="./blog-posts/week1_technical.html" class="blog_post_link">Week 1 Technical</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <aside class="index_side">
+                <h2>About me</h2>
+                <p>My name's Raphael Ho.
+                    <br>This is my blog.</p>
+            </aside>
+        </main>
+        <footer id="footer_main">
+            <hr>
+            <p>&copy;2014 Raphael Ho
+            </p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./stylesheets/skrollr.js"></script>
+    <script type="text/javascript">
+    skrollr.init({
+        smoothScrolling: false,
+        mobileDeceleration: 0.004
+    });
+    </script>
 </body>
