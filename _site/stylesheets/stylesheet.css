@@ -142,7 +142,7 @@ main img {
 }
 
 pre {
-	margin: auto;
+	margin: 1em auto 1em;
 	width: 75%;
 	font-size: 1.1em;
 }
