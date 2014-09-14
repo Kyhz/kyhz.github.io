@@ -6,7 +6,7 @@ defaults:
     values:
        layout: "default"
        author: "Raphael Ho"
-paginate: 5
+paginate: 10
 paginate_path: "/page:num"
 highlighter: pygment
 encoding: utf-8
