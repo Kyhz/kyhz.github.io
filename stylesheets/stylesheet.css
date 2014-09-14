@@ -141,16 +141,10 @@ main img {
 	margin: auto;
 }
 
-/*code {
-	font-family: Courier;
-	border: 0.11em solid grey;
+code {
 	margin: auto;
-	width: 60%;
-	margin-bottom: 1em;
-	margin-top: 1em;
-	line-height: 2em;
 }
-*/
+
 #footer_main {
 	clear: both;
 	font-size: 0.7em;
