@@ -3,19 +3,20 @@
 	<div class="parallax-image-wrapper parallax-image-wrapper-100" data-anchor-target="#main_header + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
         <div class="parallax-image parallax-image-100" style="background-image:url(/assets/IMAG0307s.jpg)" data-anchor-target="#main_header + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);">
-        	<h1 class="parallax-text-blog">
-        	    Placeholder text, I hate parallax scrolling
-        	</h1>
-        	<h1 class="parallax-text-sub">
-        	    "Holy smokes there's even more!"
-        	</h1>
         </div>
         <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
     </div>
 
     <div id="skrollr-body">
 	{% include header.html %}
-	<div class="gap gap-100" style="background-image:url(/assets/IMAG0307s.jpg);"></div>
+	<div class="gap gap-100" style="background-image:url(./IMAG0307s.jpg);"></div>
+	<h1 class="parallax-text-blog">
+	    Placeholder text, I hate parallax scrolling
+	</h1>
+	<h1 class="parallax-text-sub">
+	    "Holy smokes there's even more!"
+	</h1>
+	<div class="parallax-text-arrow"><i class="fa fa-angle-down fa-5x"></i></div>
 
 	{{ content }}
 
