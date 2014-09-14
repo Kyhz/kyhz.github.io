@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<title>CrossedUp</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
+	<link rel="stylesheet" href="./fonts/fira.css">
+</head>
+<body>
+	<div class="container">
+		<header id="main_header">
+			<h1 id="header_titles">Crossed<br><span class="header_title_alt">up</span></h1>
+			<nav class="header_nav_bar">
+				<ul class="nav_bar">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../projects.html">Projects</a></li>
+					<li><a href="https://twitter.com/dat_kyhz" target"_blank">Twitter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<header class="article_header">
+				<h1>Week 2 Technical</h1>
+				<p>Saturday, July 26th 2014, Co-authored with Christopher Hirsh</p>
+			</header>
+			<div class="main_wrapper">
+				<section>
+					<h2 class="article_subtitle">Inline vs Inline-block</h2>
+						<p>There are different ways to position content in HTML to make your page look good. Two of these are the CSS properties display:inline and display: inline-block. We are going to examine the differences between these two styles.</p>
+					    <h3>Inline</h3>
+					    <img id="inline" src="http://i.minus.com/ibgI1CEJ2afjdJ.jpg" />
+					    <div class="code">
+					        .inline{<br>&emsp;display: inline;<br>&emsp;background: grey;<br>}<br>
+							&lt;p class="inline"&gt; Lorem ipsum dolor...&lt;/p&gt;<br>
+							&lt;p class="inline"&gt; Lorem ipsum dolor...&lt;/p&gt;
+					    </div>
+					    <p>Inline is the default property for some elements such as &lt;span&gt; and &lt;strong&gt;. Inline positioning displays content sequentially without any spaces or line breaks. As the name "inline" implies, it basically keeps things on the same horizantal line.</p>
+					    <p>The image above is actually two HTML paragraphs. Normally there would be a break between the two and they would be stacked vertically, but here because we use display: inline, the second paragraph begins immediately following the end of the first and therefore they appear as one.</p>
+					    
+					    <h3>Inline-Block</h3>
+					    <img id="inline-block" src="http://i.minus.com/ivN1Wb7LizvcC.jpg" />
+					    <div class="code">
+					        .inline-block{<br>&emsp;width: 300px;<br>&emsp;display: inline-block;<br>&emsp;background: grey;<br>}<br>
+							&lt;p class="inline-block"&gt; Lorem ipsum dolor...&lt;/p&gt;<br>
+							&lt;p class="inline-block"&gt; Lorem ipsum dolor...&lt;/p&gt;
+					    </div>
+					    <p>Inline-block is a method of displaying HTML in block on the same horizantal line. Normally display: block displays HTML elements stacked vertically. Display: inline-block stacks them horizantally. It can be used as an alternative to float.</p>
+					    <p>The above image displays the same two paragraphs using display: inline-block. As the name inline-block suggests, the elements are displayed as blocks on the same horizontal line. If they were displayed as regular blocks they would display as vertically stacked.</p>
+				</section>
+			</div>
+		</main>
+		<footer id="footer_main">
+			<hr>
+			<p>&copy;2014 Raphael Ho
+			</p>
+		</footer>
+	</div>
+</body>

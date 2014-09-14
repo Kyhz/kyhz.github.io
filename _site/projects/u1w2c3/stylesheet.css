@@ -1,0 +1,99 @@
+body {
+	font-family: "Fira Sans";
+}
+
+header {
+	margin-top: 1.5em;
+	margin-right: 1.5em;
+	text-align: center;
+	width: 100%;
+}
+
+.header_wrapper {
+	float: right;
+	width: 70%;
+}
+
+#main_visual {
+	margin-bottom: 1.5em;
+	margin-left: 2.5em;
+}
+
+aside {
+	position: fixed;
+	float: left;
+	width: 20%;
+	margin-left: 4.5em;
+	margin-top: 12em;
+}
+
+#nav_list li {
+	text-align: left;
+	margin-left: 0;
+	font-size: 20px;
+	list-style: none;
+	padding-bottom: 1.5em;
+}
+
+.main_wrapper {
+	width: 70%;
+	float: right;
+}
+
+.main_wrapper p {
+	margin-left: 2em;
+	width: 95%;
+}
+
+@media screen and (max-width: 970px) {
+	#main_visual {
+		display: none;
+	}
+
+	.header_wrapper,
+	.main_wrapper,
+	aside 	{
+		float: none;
+		width: 100%;
+	}
+
+	.main_wrapper p {
+		margin: auto;
+	}
+
+	.header_wrapper {
+		margin-top: 4em;
+	}
+
+	#nav_list {
+		padding: 0;
+	}
+
+	aside {
+		top: 1em;
+		margin: 0;
+		text-align: center;
+		position: absolute;
+	}
+
+	#nav_list li {
+		display: inline;
+		padding: 1em 3em;
+		font-size: 1em;
+	}
+	
+}
+
+@media screen and (max-width: 667px) {
+
+	h1, h2 {
+		font-size: 1em;
+	}
+
+	#nav_list li {
+		font-size: .7em;
+		padding-left: 0;
+	}
+
+
+}

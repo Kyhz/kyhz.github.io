@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<title>CrossedUp</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
+	<link rel="stylesheet" href="./fonts/fira.css">
+</head>
+<body>
+	<div class="container">
+		<header id="main_header">
+			<h1 id="header_titles">Crossed<br><span class="header_title_alt">up</span></h1>
+			<nav class="header_nav_bar">
+				<ul class="nav_bar">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../projects.html">Projects</a></li>
+					<li><a href="https://twitter.com/dat_kyhz" target"_blank">Twitter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<header class="article_header">
+				<h1>Go Computing</h1>
+				<p>Sunday, August 10th 2014</p>
+			</header>
+			<div class="main_wrapper">
+				<section>
+					<h2 class="article_subtitle">Game of Stones</h2>
+					<p>Games have long been a subfield of computer AI. In 1957, Herbert Simon predicted that in 10 years, computers would have outclassed the best human players in the game of chess. Well, it took a little longer than that, but it eventually did happen. Supercomputer Deep Blue beat the highest ranked chess player at the time Garry Kasparov in 1997. And since then, computers have only gotten more powerful, while humans have pretty much stayed the same (one could argue that point, but it's certainly not on the level of Moore's Law). So if chess, in all its complexity, couldn't withstand the test of the silicon age, then who else could possibly put up a fight? Allow me to introduce to you Go. No, not the programming language by Google, although that one's cool too. The Eastern board game of Go.</p>
+					<p>The rules are exceptionally simple: two players alternate placing black or white stones on a gridded board. If you are able to surround the opponent's stone or stones with your own, they are captured and removed from the game. The winner is the one who controls the most territory, i.e stones and spaces enclosed by your stones. So what makes this so much more difficult for computers to handle? Quite a bit, actually, and some of it extremely complex. But I'm going to talk about two that are easily understood. First of all, let's talk a bit on how computers actually handle games.</p>
+					<p>The program isn't emulating the way humans think when they play chess. People have tried and failed to make it work in such a way. Instead, they do what computers are best at: calculate stuff real fast. Deep Blue won by calculating (roughly) 12 moves ahead. This is of course a staggering amount of data to process, as each possible move branches out exponentially. There are some clever techniques that limit that amount somewhat, but they can only do so much. But it still did it! It calculated all the moves 12 turns in advance and picked the best one. Awesome, let's do the same for Go, then. Well, turns out that's actually easier said than done. In chess there are about 10^43 different possible legal moves. In Go, 10^170. That's a whole damn more. There is just much, much more possible lines of play, mostly due to the size of the board being significantly bigger in Go.</p>
+					<p>As we mentioned, chess programs look ahead some number of moves and choose the "best" one. But how does it know which one is the best? Well, it's somewhat difficult because a lot of it is about board positioning, but really a significant portion of winning is taking the opponent's pieces while preserving your own. You can assign values to pieces and see which moves net you a quantitative advantage. In Go, positional advantage is basically everything, and that is much harder to quantify. Even discounting the additional processing power to be able to read say 12 moves ahead compared to chess, it also requires even more complex computing to figure out which of these moves are advantageous. What good is being able to see all moves ahead of time if you don't know which ones are good or not? Anyway, these are only two things that make Go computing different from Chess computing. There is surely some overlap, as well as many other differences, but I hope this small peak into the field held your interest. See you next week!</p>
+				</section>
+			</div>
+		</main>
+		<footer id="footer_main">
+			<hr>
+			<p>&copy;2014 Raphael Ho
+			</p>
+		</footer>
+	</div>
+</body>

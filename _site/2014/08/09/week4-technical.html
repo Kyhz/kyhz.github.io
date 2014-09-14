@@ -1,24 +1,31 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<title>Enumerable#group_by</title>
-	<meta name="generator" content="Jekyll v2.3.0">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="stylesheet" href="/fonts/fonts.css">
-	<link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="/stylesheets/highlight.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>CrossedUp</title>
+    <link rel="stylesheet" href="./fonts/fira.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/font-awesome.min.css">
 </head>
 <body class="container">
 	<header id="main_header">
-	<h1 id="header_titles">Crossed<br><span class="header_title_alt">up</span></h1>
-	<nav class="header_nav_bar">
-		<ul class="nav_bar">
-			<li><a href="/index.html">Home</a></li>
-			<li><a href="/projects.html">Projects</a></li>
-			<li><a href="https://twitter.com/dat_kyhz" target="_blank">Twitter</a></li>
-		</ul>
-	</nav>
+    <h1 id="header_titles"><a href="./index.html">Crossed<br><span class="header_title_alt">up</span></a>
+    </h1>
+    <nav class="header_nav_bar">
+        <ul class="nav_bar">
+            <li><a href="https://www.google.com/+Rapha%C3%ABlHo" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+            </li>
+            <li><a href="https://www.facebook.com/raphael.ho.73" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+            </li>
+            <li><a href="https://github.com/Kyhz/" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+            </li>
+            <li><a href="https://twitter.com/dat_kyhz" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 	<main>
@@ -31,15 +38,15 @@
 
 <p>So what does group_by do? Basically it lets you sort your array or hash or whatever into bins. You get to decide how they are sorted by specifying some rule inside a block. But it’s probably just easier to explain with an example.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">hash</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Chrono Trigger&quot;</span> <span class="o">=&gt;</span> <span class="mi">1995</span><span class="p">,</span> <span class="s2">&quot;Super Mario 64&quot;</span> <span class="o">=&gt;</span> <span class="mi">1996</span><span class="p">,</span> <span class="s2">&quot;Diablo&quot;</span> <span class="o">=&gt;</span> <span class="mi">1996</span><span class="p">,</span> <span class="s2">&quot;Street Fighter Alpha 2&quot;</span> <span class="o">=&gt;</span> <span class="mi">1996</span><span class="p">,</span> <span class="s2">&quot;Megaman X&quot;</span> <span class="o">=&gt;</span> <span class="mi">1993</span><span class="p">,</span> <span class="s2">&quot;Tactics Ogre&quot;</span> <span class="o">=&gt;</span> <span class="mi">1995</span><span class="p">}</span>
-<span class="nb">hash</span><span class="o">.</span><span class="n">group_by</span> <span class="p">{</span><span class="o">|</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="o">|</span> <span class="n">v</span><span class="p">}</span>
-<span class="p">{</span><span class="mi">1995</span><span class="o">=&gt;[[</span><span class="s2">&quot;Chrono Trigger&quot;</span><span class="p">,</span> <span class="mi">1995</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;Tactics Ogre&quot;</span><span class="p">,</span> <span class="mi">1995</span><span class="o">]]</span><span class="p">,</span> <span class="mi">1996</span><span class="o">=&gt;[[</span><span class="s2">&quot;Super Mario 64&quot;</span><span class="p">,</span> <span class="mi">1996</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;Diablo&quot;</span><span class="p">,</span> <span class="mi">1996</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;Street Fighter Alpha 2&quot;</span><span class="p">,</span> <span class="mi">1996</span><span class="o">]]</span><span class="p">,</span> <span class="mi">1993</span><span class="o">=&gt;[[</span><span class="s2">&quot;Megaman X&quot;</span><span class="p">,</span> <span class="mi">1993</span><span class="o">]]</span><span class="p">}</span></code></pre></div>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">hash</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"Chrono Trigger"</span> <span class="o">=&gt;</span> <span class="mi">1995</span><span class="p">,</span> <span class="s2">"Super Mario 64"</span> <span class="o">=&gt;</span> <span class="mi">1996</span><span class="p">,</span> <span class="s2">"Diablo"</span> <span class="o">=&gt;</span> <span class="mi">1996</span><span class="p">,</span> <span class="s2">"Street Fighter Alpha 2"</span> <span class="o">=&gt;</span> <span class="mi">1996</span><span class="p">,</span> <span class="s2">"Megaman X"</span> <span class="o">=&gt;</span> <span class="mi">1993</span><span class="p">,</span> <span class="s2">"Tactics Ogre"</span> <span class="o">=&gt;</span> <span class="mi">1995</span><span class="p">}</span>
+<span class="nb">hash</span><span class="p">.</span><span class="nf">group_by</span> <span class="p">{</span><span class="o">|</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="o">|</span> <span class="n">v</span><span class="p">}</span>
+<span class="p">{</span><span class="mi">1995</span><span class="o">=&gt;</span><span class="p">[[</span><span class="s2">"Chrono Trigger"</span><span class="p">,</span> <span class="mi">1995</span><span class="p">],</span> <span class="p">[</span><span class="s2">"Tactics Ogre"</span><span class="p">,</span> <span class="mi">1995</span><span class="p">]],</span> <span class="mi">1996</span><span class="o">=&gt;</span><span class="p">[[</span><span class="s2">"Super Mario 64"</span><span class="p">,</span> <span class="mi">1996</span><span class="p">],</span> <span class="p">[</span><span class="s2">"Diablo"</span><span class="p">,</span> <span class="mi">1996</span><span class="p">],</span> <span class="p">[</span><span class="s2">"Street Fighter Alpha 2"</span><span class="p">,</span> <span class="mi">1996</span><span class="p">]],</span> <span class="mi">1993</span><span class="o">=&gt;</span><span class="p">[[</span><span class="s2">"Megaman X"</span><span class="p">,</span> <span class="mi">1993</span><span class="p">]]}</span></code></pre></div>
 
 <p>So we take a hash of games and their release dates, then we call group_by and tell it to sort it by the hash values, i.e by release date, and we get a hash where the keys are the release dates and the values are arrays of the games that came out that year. In more abstract terms, the result of group_by is a hash whose keys are the evaluated result of the block passed to it and the values are arrays of elements in the collection that evaluated to that result. This is a very powerful tool since it allows us to easily sort data using very flexible criteria. For example, suppose we have an array of mixed data, like the one we had in challenge 2 of this week. We can use group_by to isolate a specific type of data.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">i_want_pets</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;want&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;pets&quot;</span><span class="p">,</span> <span class="s2">&quot;but&quot;</span><span class="p">,</span> <span class="s2">&quot;only&quot;</span><span class="p">,</span> <span class="s2">&quot;have&quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">]</span>
-<span class="n">no_numbers_allowed</span> <span class="o">=</span> <span class="n">i_want_pets</span><span class="o">.</span><span class="n">group_by</span><span class="p">{</span><span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span><span class="o">.</span><span class="n">is_a?</span><span class="p">(</span><span class="nb">Integer</span><span class="p">)}</span><span class="o">[</span><span class="kp">false</span><span class="o">]</span>
-<span class="o">[</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;want&quot;</span><span class="p">,</span> <span class="s2">&quot;pets&quot;</span><span class="p">,</span> <span class="s2">&quot;but&quot;</span><span class="p">,</span> <span class="s2">&quot;only&quot;</span><span class="p">,</span> <span class="s2">&quot;have&quot;</span><span class="o">]</span></code></pre></div>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">i_want_pets</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"I"</span><span class="p">,</span> <span class="s2">"want"</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"pets"</span><span class="p">,</span> <span class="s2">"but"</span><span class="p">,</span> <span class="s2">"only"</span><span class="p">,</span> <span class="s2">"have"</span><span class="p">,</span> <span class="mi">2</span> <span class="p">]</span>
+<span class="n">no_numbers_allowed</span> <span class="o">=</span> <span class="n">i_want_pets</span><span class="p">.</span><span class="nf">group_by</span><span class="p">{</span><span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span><span class="p">.</span><span class="nf">is_a?</span><span class="p">(</span><span class="nb">Integer</span><span class="p">)}[</span><span class="kp">false</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"I"</span><span class="p">,</span> <span class="s2">"want"</span><span class="p">,</span> <span class="s2">"pets"</span><span class="p">,</span> <span class="s2">"but"</span><span class="p">,</span> <span class="s2">"only"</span><span class="p">,</span> <span class="s2">"have"</span><span class="p">]</span></code></pre></div>
 
 <p><code>is_a?(Integer)</code> checks each element to see if it’s a number and returns a boolean. So we have a hash with 2 keys: true and false, the former containing all the integers and the latter containing everything else. We simply select the value of the false bin, which is an array of things not numbers. Pretty cool, depending on how high your standards for coolness are. Personally I think it’s great and foresee using it in a lot of situations. Until next time.</p>
 
