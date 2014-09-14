@@ -143,6 +143,8 @@ main img {
 
 code {
 	margin: auto;
+	width: 75%;
+	font-size: 1.1em;
 }
 
 #footer_main {
