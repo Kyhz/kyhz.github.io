@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title:
+title: A Quest for Questions
 tags:
 - DBC
 - Cultural
