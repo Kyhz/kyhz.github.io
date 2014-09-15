@@ -1,0 +1,15 @@
+---
+layout: blog-post
+title:
+tags:
+- DBC
+- Cultural
+- Questions
+---
+I recently had a question I posted on the DBC Google+ page which fell flat, sorta. I wasn't critical or anything, so I just forgot about it after a day or two. Looking back at it though, it wasn't formulated in a very clear manner and came short on a lot of the aspects that make a question "good". Here's what I wrote:
+                                                                                                                                                                                                                                 
+>Hello all, two questions about ArgumentError. First, is there a way to check to see if something is indeed raising an ArgumentError other than running it and looking at the output? Like a isArgumentErrorRaised?(Class.new(invalid_input)) of some sorts.  
+>Related to this, I was writing some driver code with an input that raises an ArgumentError as the last test, and was surprised when it returned the error before some of tests that were written before it. Even worse, it wasn't even consistent since sometimes it ran the other tests fine before raising the error. Can someone shed some light on this?﻿
+
+Okay, it was actually two questions, and one of them did get answered. That was probably the first mistake: putting two questions inside one post. The circumstances around the post are slightly different than asking on a site like Stack Overflow, but for the sake of analysis, let's assume this was posted as is on SO or similar. There's no real way to post a title on a G+ post, but I would've been hardpressed to find an adequate one that covers both those questions. Really, they should have been separate posts altogether. Second, there's absolutely no mention of the context. Not even which language this is for (it's Ruby). Again, given that I was posting in the DBC page and everyone was at the time working on the same Ruby excercises, it was probably unnecessary to specify it, but if it's a terrible thing to omit in a more general context. The first question not being the kind of problem where something isn't working, details about the platform, OS, and other constraints aren't relevant. They might very well be for the second one though, so I should have included which Ruby version I was using and the fact that I was running Ubuntu.  
+The first question is something I could have found out on my own. Other people had already asked the exact same question on Stack Overflow, so I could have simply google'd my issue and save the kind person who answered me instead some time. The second question is a trickier to google since I don't really know what is exactly happening. The behavior reminded me of issues that can happen in multithreading, which is something I could have mentioned. The biggest failing in the question in my opinion though is that I don't provide any sample code. Re-reading what I wrote, even after only a few weeks in the time since I asked the question, I was a bit confused about the situation. Providing 3 lines of code and outputs would have helped clarify the situation immensely. 
